@@ -1,0 +1,8 @@
+
+db:
+  image: sath89/oracle-xe-11g:latest
+  ports:
+    - "8080:9000"
+    - "1521:1521"
+  volumes:
+    - .oracle_data:/u01/app/oracle
