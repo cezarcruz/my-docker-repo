@@ -12,8 +12,8 @@ services:
         depends_on:
             - mysqldb
     mysqldb:
-        image: mysql
-        container_name: mysql
+        image: mariadb
+        container_name: mariadb
         restart: always        
         environment:
             - MYSQL_DATABASE=app
